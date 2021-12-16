@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'Rubik-Regular';
+    src: url(../policies/Rubik/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Rubik-Light';
+    src: url(../policies/Rubik/Rubik-Light.ttf);
+}
+
+@mixin containers {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    
+    
+    
+    
+    .data {
+        max-width: 200px;
+        font-size: 56px;
+        font-family: 'Rubik-Light',sans-serif;
+    }
+    .last-data {
+        max-width: 200px;
+        font-family: 'Rubik-Regular', sans-serif;
+        font-size: 15px;
+        color: #BBC0FF;
+    }
+}
+
+.invisible {
+    visibility: collapse;
+}
+
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    margin-left: -80px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    background-color: #0D1323;
+    background-repeat: no-repeat;
+}
+
+.app {
+    font-family: 'Rubik-Regular', sans-serif;
+    font-size: 18px;
+    width: 1100px;
+    color: white;
+    display: grid;
+    grid-template-columns: 285px 285px 285px 285px;
+    grid-template-rows: 285px 285px;
+    grid-template-areas:
+    "user work play study"
+    "user exercise social selfcare"
+    ;
+    > div {
+        max-width: 255px;
+        width: 225px;
+        margin: 30px;
+        background: #1C204B;
+        
+    }
+}
+
+
+.user-container {
+    border-radius: 10px;
+    grid-area: user;
+}
+
+.username-container {
+    border-radius: 10px;
+    background-color: #5747EA;
+    height: 324px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 30px;
+    .report {
+        padding-top: 40px;
+    }
+    .username {
+        font-size: 40px;
+        font-family: 'Rubik-Light', sans-serif;
+    }
+    img {
+        border: 2px solid white;
+        border-radius: 300px;
+    }
+}
+
+.summary-container {
+    grid-area: summary;
+    ul {
+        list-style: none;
+        color: #7078C9;
+        li {
+            max-width: 5px;
+            padding-bottom: 15px;
+            a {
+                color: #7078C9;
+                text-decoration: none;
+                &:hover {
+                    color: white;
+                }
+                &:active {
+                    color: white;
+                }
+                &:focus {
+                    color: white;
+                }
+            }
+        }
+    }
+    
+}
+
+.ellipsis {
+    position: relative;
+    left: 175px;
+    bottom: 7%;
+    width: 24px;
+    height: 24;
+}
+
+.activity-title {
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+.daily {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    max-width: 200px;
+    position: relative;
+    top: 5px;
+}
+
+.weekly {
+    margin-top: -80px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.monthly {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    position: relative;
+    top: -85px;
+}
+
+
+.work-container {
+    position: relative;
+    top: 30px;
+    @include containers;
+    height: 199px;
+    grid-area: work;
+    display: flex;
+    flex-direction: column;
+}
+
+.play-container {
+    position: relative;
+    top: 30px;
+    height: 199px;
+    @include containers;
+    grid-area: play;
+}
+
+.study-container {
+    position: relative;
+    top: 30px;
+    height: 199px;
+    @include containers;
+    grid-area: study;
+}
+
+.exercise-container {
+    position: relative;
+    top: 25px;
+    height: 199px;
+    @include containers;
+    grid-area: exercise;
+}
+
+.social-container {
+    position: relative;
+    top: 25px;
+    height: 199px;
+    @include containers;
+    grid-area: social;
+}
+
+.selfcare-container {
+    position: relative;
+    top: 25px;
+    height: 199px;
+    @include containers;
+    grid-area: selfcare;
+}
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
