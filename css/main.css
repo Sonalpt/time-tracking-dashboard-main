@@ -15,7 +15,6 @@
 body {
   min-height: 100vh;
   margin: 0;
-  margin-left: -80px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -45,7 +44,8 @@ body {
       grid-template-columns: 285px 285px 285px 285px;
   -ms-grid-rows: 285px 285px;
       grid-template-rows: 285px 285px;
-      grid-template-areas: "user work play study" "user exercise social selfcare";
+      grid-template-areas: "user work play study"
+ "user exercise social selfcare";
 }
 
 .app > div {
