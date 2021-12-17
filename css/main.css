@@ -144,6 +144,17 @@ body {
   color: white;
 }
 
+.icon-banner {
+  z-index: -1;
+  position: absolute;
+  width: 255px;
+  height: 45px;
+  max-height: 45px;
+  top: -35px;
+  right: 0px;
+  border-radius: 10px 10px 0px 0px;
+}
+
 .ellipsis {
   position: relative;
   left: 175px;
@@ -197,6 +208,7 @@ body {
 }
 
 .work-container {
+  z-index: 2;
   position: relative;
   top: 30px;
   border-radius: 10px;
@@ -214,6 +226,17 @@ body {
   grid-area: work;
   display: flex;
   flex-direction: column;
+}
+
+.work-container .icon-banner {
+  z-index: -1;
+  position: absolute;
+  width: 255px;
+  height: 70px;
+  background-color: #FF8B64;
+  background-image: url(../images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
 .play-container {
@@ -234,6 +257,17 @@ body {
   grid-area: play;
 }
 
+.play-container .icon-banner {
+  z-index: 1;
+  position: absolute;
+  width: 255px;
+  height: 70px;
+  background-color: #55C2E6;
+  background-image: url(../images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
 .study-container {
   position: relative;
   top: 30px;
@@ -250,6 +284,17 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: study;
+}
+
+.study-container .icon-banner {
+  z-index: 1;
+  position: absolute;
+  width: 255px;
+  height: 70px;
+  background-color: #FF5E7D;
+  background-image: url(../images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
 .exercise-container {
@@ -270,6 +315,17 @@ body {
   grid-area: exercise;
 }
 
+.exercise-container .icon-banner {
+  z-index: 1;
+  position: absolute;
+  width: 255px;
+  height: 70px;
+  background-color: #4BCF82;
+  background-image: url(../images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
 .social-container {
   position: relative;
   top: 25px;
@@ -288,6 +344,17 @@ body {
   grid-area: social;
 }
 
+.social-container .icon-banner {
+  z-index: 1;
+  position: absolute;
+  width: 255px;
+  height: 70px;
+  background-color: #7335D2;
+  background-image: url(../images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
 .selfcare-container {
   position: relative;
   top: 25px;
@@ -304,6 +371,17 @@ body {
   -ms-grid-row: 2;
   -ms-grid-column: 4;
   grid-area: selfcare;
+}
+
+.selfcare-container .icon-banner {
+  z-index: 1;
+  position: absolute;
+  width: 255px;
+  height: 70px;
+  background-color: #F1C75B;
+  background-image: url(../images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
 @media (max-width: 1100px) {
@@ -326,6 +404,15 @@ body {
     width: 165px;
     margin: 30px;
     background: #1C204B;
+  }
+  .icon-banner {
+    position: absolute;
+    max-width: 195px;
+    height: 45px;
+    max-height: 45px;
+    top: -35px;
+    right: 0px;
+    border-radius: 10px 10px 0px 0px;
   }
   .ellipsis {
     position: relative;
@@ -473,6 +560,16 @@ body {
     left: 50px;
     top: 15px;
   }
+  .icon-banner {
+    z-index: -1;
+    position: absolute;
+    min-width: 330px;
+    height: 45px;
+    max-height: 45px;
+    top: -35px;
+    right: 0px;
+    border-radius: 10px 10px 0px 0px;
+  }
   .ellipsis {
     position: relative;
     left: 250px;
@@ -483,6 +580,7 @@ body {
   .user-container {
     border-radius: 10px;
     min-height: 203px;
+    min-width: 330px;
   }
   .username-container {
     border-radius: 10px;
@@ -522,7 +620,7 @@ body {
     border-radius: 300px;
   }
   .summary-container {
-    height: 70px;
+    height: 0px;
   }
   .summary-container ul {
     font-size: 16px;
