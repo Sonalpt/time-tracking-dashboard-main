@@ -64,7 +64,14 @@ body {
   max-width: 255px;
   width: 225px;
   margin: 30px;
-  background: #1C204B;
+  background-color: #1C204B;
+  -webkit-transition: background-color 400ms;
+  transition: background-color 400ms;
+}
+
+.app > div:hover {
+  background-color: #313883;
+  cursor: pointer;
 }
 
 .user-container {
@@ -120,6 +127,8 @@ body {
 
 .summary-container ul li a {
   color: #7078C9;
+  -webkit-transition: color 400ms;
+  transition: color 400ms;
   text-decoration: none;
 }
 
@@ -140,7 +149,7 @@ body {
   left: 175px;
   bottom: 7%;
   width: 24px;
-  height: 24;
+  height: 24px;
 }
 
 .activity-title {
@@ -450,13 +459,13 @@ body {
     bottom: 73px;
   }
   .data {
-    max-width: 200px;
+    max-width: 83px;
     font-size: 36px;
     font-family: 'Rubik-Light',sans-serif;
   }
   .last-data {
     max-width: 200px;
-    min-width: 200px;
+    min-width: 150px;
     font-family: 'Rubik-Regular', sans-serif;
     font-size: 15px;
     color: #BBC0FF;
@@ -555,6 +564,7 @@ body {
 }
 
 .attribution {
+  color: white;
   font-size: 11px;
   text-align: center;
 }

@@ -62,8 +62,12 @@ body {
         max-width: 255px;
         width: 225px;
         margin: 30px;
-        background: #1C204B;
-        
+        background-color: #1C204B;
+        transition: background-color 400ms; 
+        &:hover {
+            background-color: lighten($color: #1C204B, $amount: 15%);
+            cursor: pointer;
+        }   
     }
 }
 
@@ -104,6 +108,7 @@ body {
             padding-bottom: 15px;
             a {
                 color: #7078C9;
+                transition: color 400ms;
                 text-decoration: none;
                 &:hover {
                     color: white;
@@ -125,7 +130,8 @@ body {
     left: 175px;
     bottom: 7%;
     width: 24px;
-    height: 24;
+    height: 24px;
+
 }
 
 .activity-title {
@@ -347,13 +353,13 @@ body {
 
 
     .data {
-        max-width: 200px;
+        max-width: 83px;
         font-size: 36px;
         font-family: 'Rubik-Light',sans-serif;
     }
     .last-data {
         max-width: 200px;
-        min-width: 200px;
+        min-width: 150px;
         font-family: 'Rubik-Regular', sans-serif;
         font-size: 15px;
         color: #BBC0FF;
@@ -453,6 +459,7 @@ body {
 
 
 .attribution {
+    color: white;
      font-size: 11px; 
      text-align: center; }
 .attribution a {
