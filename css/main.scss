@@ -67,7 +67,7 @@ body {
         &:hover {
             background-color: lighten($color: #1C204B, $amount: 15%);
             cursor: pointer;
-        }   
+        }
     }
 }
 
@@ -176,7 +176,7 @@ body {
 
 
 .work-container {
-    z-index: 2;
+    z-index: 1;
     position: relative;
     top: 30px;
     @include containers;
@@ -185,7 +185,7 @@ body {
     display: flex;
     flex-direction: column;
     .icon-banner {
-        z-index: -1;
+        z-index: 1;
         position: absolute;
         width: 255px;
         height: 70px;
@@ -193,6 +193,12 @@ body {
         background-image: url(../images/icon-work.svg);
         background-repeat: no-repeat;
         background-position: top right;
+        transform-origin: left bottom;
+        transform: rotate(0deg);
+        transition: transform 600ms ease-in-out;
+    }
+    &:hover > .icon-banner {
+        transform: rotate(-15deg);
     }
 }
 
@@ -211,6 +217,12 @@ body {
         background-image: url(../images/icon-play.svg);
         background-repeat: no-repeat;
         background-position: top right;
+        transform-origin: left bottom;
+        transform: rotate(0deg);
+        transition: transform 600ms ease-in-out;
+    }
+    &:hover > .icon-banner {
+        transform: rotate(-15deg);
     }
 }
 
@@ -229,6 +241,12 @@ body {
         background-image: url(../images/icon-study.svg);
         background-repeat: no-repeat;
         background-position: top right;
+        transform-origin: left bottom;
+        transform: rotate(0deg);
+        transition: transform 600ms ease-in-out;
+    }
+    &:hover > .icon-banner {
+        transform: rotate(-15deg);
     }
 }
 
@@ -247,6 +265,12 @@ body {
         background-image: url(../images/icon-exercise.svg);
         background-repeat: no-repeat;
         background-position: top right;
+        transform-origin: left bottom;
+        transform: rotate(0deg);
+        transition: transform 600ms ease-in-out;
+    }
+    &:hover > .icon-banner {
+        transform: rotate(-15deg);
     }
 }
 
@@ -265,6 +289,12 @@ body {
         background-image: url(../images/icon-social.svg);
         background-repeat: no-repeat;
         background-position: top right;
+        transform-origin: left bottom;
+        transform: rotate(0deg);
+        transition: transform 600ms ease-in-out;
+    }
+    &:hover > .icon-banner {
+        transform: rotate(-15deg);
     }
 }
 
@@ -283,6 +313,12 @@ body {
         background-image: url(../images/icon-self-care.svg);
         background-repeat: no-repeat;
         background-position: top right;
+        transform-origin: left bottom;
+        transform: rotate(0deg);
+        transition: transform 600ms ease-in-out;
+    }
+    &:hover > .icon-banner {
+        transform: rotate(-15deg);
     }
 }
 
@@ -378,6 +414,10 @@ body {
         
     }
 }
+
+
+
+
 
 
 @media (max-width: 767px) {
