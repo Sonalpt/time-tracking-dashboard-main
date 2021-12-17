@@ -8,6 +8,19 @@
   src: url(../policies/Rubik/Rubik-Light.ttf);
 }
 
+.data {
+  max-width: 200px;
+  font-size: 56px;
+  font-family: 'Rubik-Light',sans-serif;
+}
+
+.last-data {
+  max-width: 200px;
+  font-family: 'Rubik-Regular', sans-serif;
+  font-size: 15px;
+  color: #BBC0FF;
+}
+
 .invisible {
   visibility: collapse;
 }
@@ -44,8 +57,7 @@ body {
       grid-template-columns: 285px 285px 285px 285px;
   -ms-grid-rows: 285px 285px;
       grid-template-rows: 285px 285px;
-      grid-template-areas: "user work play study"
- "user exercise social selfcare";
+      grid-template-areas: "user work play study" "user exercise social selfcare";
 }
 
 .app > div {
@@ -144,14 +156,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 30px;
   max-width: 200px;
   position: relative;
-  top: 5px;
+  top: 39px;
 }
 
 .weekly {
-  margin-top: -80px;
+  position: relative;
+  bottom: 45px;
   max-width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,7 +184,7 @@ body {
           flex-direction: column;
   max-width: 200px;
   position: relative;
-  top: -85px;
+  bottom: 129px;
 }
 
 .work-container {
@@ -195,19 +207,6 @@ body {
   flex-direction: column;
 }
 
-.work-container .data {
-  max-width: 200px;
-  font-size: 56px;
-  font-family: 'Rubik-Light',sans-serif;
-}
-
-.work-container .last-data {
-  max-width: 200px;
-  font-family: 'Rubik-Regular', sans-serif;
-  font-size: 15px;
-  color: #BBC0FF;
-}
-
 .play-container {
   position: relative;
   top: 30px;
@@ -224,19 +223,6 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: play;
-}
-
-.play-container .data {
-  max-width: 200px;
-  font-size: 56px;
-  font-family: 'Rubik-Light',sans-serif;
-}
-
-.play-container .last-data {
-  max-width: 200px;
-  font-family: 'Rubik-Regular', sans-serif;
-  font-size: 15px;
-  color: #BBC0FF;
 }
 
 .study-container {
@@ -257,19 +243,6 @@ body {
   grid-area: study;
 }
 
-.study-container .data {
-  max-width: 200px;
-  font-size: 56px;
-  font-family: 'Rubik-Light',sans-serif;
-}
-
-.study-container .last-data {
-  max-width: 200px;
-  font-family: 'Rubik-Regular', sans-serif;
-  font-size: 15px;
-  color: #BBC0FF;
-}
-
 .exercise-container {
   position: relative;
   top: 25px;
@@ -286,19 +259,6 @@ body {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: exercise;
-}
-
-.exercise-container .data {
-  max-width: 200px;
-  font-size: 56px;
-  font-family: 'Rubik-Light',sans-serif;
-}
-
-.exercise-container .last-data {
-  max-width: 200px;
-  font-family: 'Rubik-Regular', sans-serif;
-  font-size: 15px;
-  color: #BBC0FF;
 }
 
 .social-container {
@@ -319,19 +279,6 @@ body {
   grid-area: social;
 }
 
-.social-container .data {
-  max-width: 200px;
-  font-size: 56px;
-  font-family: 'Rubik-Light',sans-serif;
-}
-
-.social-container .last-data {
-  max-width: 200px;
-  font-family: 'Rubik-Regular', sans-serif;
-  font-size: 15px;
-  color: #BBC0FF;
-}
-
 .selfcare-container {
   position: relative;
   top: 25px;
@@ -348,19 +295,6 @@ body {
   -ms-grid-row: 2;
   -ms-grid-column: 4;
   grid-area: selfcare;
-}
-
-.selfcare-container .data {
-  max-width: 200px;
-  font-size: 56px;
-  font-family: 'Rubik-Light',sans-serif;
-}
-
-.selfcare-container .last-data {
-  max-width: 200px;
-  font-family: 'Rubik-Regular', sans-serif;
-  font-size: 15px;
-  color: #BBC0FF;
 }
 
 @media (max-width: 1100px) {
@@ -455,7 +389,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     justify-items: center;
-    margin-left: 80px;
+    margin-left: 0px;
     font-family: 'Rubik-Regular', sans-serif;
     font-size: 18px;
     color: white;
@@ -476,33 +410,66 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 30px;
     max-width: 200px;
     position: relative;
-    top: 5px;
+    top: 13px;
   }
   .weekly {
-    margin-top: -80px;
-    max-width: 200px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .monthly {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     max-width: 200px;
     position: relative;
-    top: -85px;
+    bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .monthly {
+    max-width: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 200px;
+    position: relative;
+    bottom: 73px;
+  }
+  .data {
+    max-width: 200px;
+    font-size: 36px;
+    font-family: 'Rubik-Light',sans-serif;
+  }
+  .last-data {
+    max-width: 200px;
+    min-width: 200px;
+    font-family: 'Rubik-Regular', sans-serif;
+    font-size: 15px;
+    color: #BBC0FF;
+    position: relative;
+    left: 50px;
+    top: 15px;
+  }
+  .ellipsis {
+    position: relative;
+    left: 250px;
+    bottom: 9%;
+    width: 24px;
+    height: 24;
   }
   .user-container {
     border-radius: 10px;
