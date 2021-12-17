@@ -212,6 +212,203 @@ body {
 
 
 
+@media (max-width: 1100px) {
+
+    .app {
+        margin-left: 160px;
+        font-family: 'Rubik-Regular', sans-serif;
+        font-size: 18px;
+        width: 900px;
+        color: white;
+        display: grid;
+        grid-template-columns: 205px 205px 205px 205px;
+        grid-template-rows: 285px 285px;
+        grid-template-areas:
+        "user work play study"
+        "user exercise social selfcare"
+        ;
+        > div {
+            max-width: 165px;
+            width: 165px;
+            margin: 30px;
+            background: #1C204B;
+            
+        }
+    }
+
+    
+
+
+    .ellipsis {
+    position: relative;
+    left: 120px;
+    bottom: 7%;
+    width: 24px;
+    height: 24;
+    }
+
+    .username-container {
+        border-radius: 10px;
+        background-color: #5747EA;
+        height: 324px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-top: 30px;
+        .report {
+            padding-top: 40px;
+        }
+        .username {
+            font-size: 36px;
+            font-family: 'Rubik-Light', sans-serif;
+        }
+        img {
+            border: 2px solid white;
+            border-radius: 300px;
+        }
+    }
+    
+    .summary-container {
+        grid-area: summary;
+        ul {
+            list-style: none;
+            color: #7078C9;
+            li {
+                max-width: 5px;
+                padding-bottom: 15px;
+                a {
+                    color: #7078C9;
+                    text-decoration: none;
+                    &:hover {
+                        color: white;
+                    }
+                    &:active {
+                        color: white;
+                    }
+                    &:focus {
+                        color: white;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+
+@media (max-width: 767px) {
+    .app {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        margin-left: 80px;
+        font-family: 'Rubik-Regular', sans-serif;
+        font-size: 18px;
+        color: white;
+        max-width: 320px;
+        > div {
+                max-width: 300px;
+                width: 300px;
+                max-height: 160px;
+                margin: 30px;
+                background: #1C204B;
+            }
+
+    }
+
+    .daily {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        max-width: 200px;
+        position: relative;
+        top: 5px;
+    }
+    
+    .weekly {
+        margin-top: -80px;
+        max-width: 200px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .monthly {
+        display: flex;
+        flex-direction: row;
+        max-width: 200px;
+        position: relative;
+        top: -85px;
+    }
+
+    .user-container {
+        border-radius: 10px;
+        min-height: 203px;
+    }
+    
+    .username-container {
+        border-radius: 10px;
+        background-color: #5747EA;
+        height: 133px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-top: 30px;
+        .report {
+            margin-top: 10px;
+            font-size: 16px;
+            padding-top: 0px;
+            font-family: 'Rubik-Light',sans-serif;
+        }
+        .username {
+            display: flex;
+            flex-direction: row;
+            font-size: 24px;
+            font-family: 'Rubik-Light', sans-serif;
+        }
+        img {
+            width: 60px;
+            height: 60px;
+            border: 2px solid white;
+            border-radius: 300px;
+        }
+    }
+    
+    .summary-container {
+        height: 70px;
+        ul {
+            font-size: 16px;
+            position: relative;
+            bottom: 5px;
+            right: 18px;
+            align-items: center;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: #7078C9;
+            li {
+                max-width: 100px;
+                a {
+                    color: #7078C9;
+                    text-decoration: none;
+                    &:hover {
+                        color: white;
+                    }
+                    &:active {
+                        color: white;
+                    }
+                    &:focus {
+                        color: white;
+                    }
+                }
+            }
+        }
+        
+    }
+        
+        
+}
 
 
 
@@ -219,5 +416,12 @@ body {
 
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+.attribution {
+     font-size: 11px; 
+     text-align: center; }
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
